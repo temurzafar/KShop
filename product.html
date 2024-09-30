@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header class="relative">
+    <div class="container mx-auto lg:pt-6 lg:pb-4 py-2 flex justify-between items-center">
+        <div class="lg:w-[10rem] lg:mr-24 w-16 mr-7">
+            <img src="assets/images/logo-L.svg" alt="Logotype" class="w-full">
+        </div>
+        <div class="search-input-block lg:w-[calc(100%-35rem)] lg:mr-8 w-[calc(100%-5.75rem)]">
+            <label class="block relative">
+                <input type="text" placeholder="ПОИСК"
+                       class="relative
+                       w-full
+                       text-primary
+                       placeholder-primary
+                       lg:bg-[#FFF8FC]
+                       lg:text-base
+                       lg:leading-8
+                       lg:border-[0.125rem]
+                       lg:border-primary-light
+                       lg:pl-4
+                       lg:pr-14
+                       lg:py2
+                       bg-[#FFEBF5]
+                       text-[0.5rem]
+                       leading-3
+                       border
+                       border-primary-light-more
+                       pl-2
+                       pr-8
+                       py-1.5">
+                <button class="z-10 absolute top-1/2 -translate-y-1/2 lg:right-4 lg:w-10 w-6 right-2 this-is-class-name-for-search-result-imitation">
+                    <img src="assets/images/icons/search-L.svg" alt="" class="max-w-full open">
+                    <img src="assets/images/icons/close-pink-L.svg" alt="" class="max-w-full close">
+                </button>
+            </label>
+        </div>
+        <div class="w-[14.5rem] lg:flex items-center hidden">
+            <a href="#" class=""><img src="assets/images/icons/person.svg" alt="" class="w-10"></a>
+            <a href="#" class="pl-14"><img src="assets/images/icons/favorite-pink-line.svg" alt="" class="w-7"></a>
+            <a href="#" class="pl-14 relative">
+                <img src="assets/images/icons/basket.svg" alt="" class="w-10">
+                <span class="absolute top-0 -right-1 bg-tertiary rounded-full text-white font-semibold w-6 h-6 flex items-center justify-center">1</span>
+            </a>
+        </div>
+    </div>
+    <div id="search-result" class="bg-white absolute top-full left-0 w-full z-50">
+        <div class="container mx-auto lg:py-20 py-8">
+            <div class="grid xl:grid-cols-6 xl:gap-8 grid-cols-2 gap-4 max-lg:gap-y-6">
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+            </div>
+            <a href="#" class="text-tertiary uppercase lg:mt-20 mt-10 flex items-center max-lg:text-xs">
+                Показать все
+                <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="lg:ml-2 lg:w-4 ml-1 w-3">
+            </a>
+        </div>
+    </div>
+</header>
+<div id="mobile-menu">
+    <button class="close"><img src="assets/images/icons/close-tertiary-L.svg" alt=""></button>
+    <nav>
+        <ul>
+            <li>
+                <button>Каталог</button>
+                <div class="sub">
+                    <button>Каталог</button>
+                    <ul>
+                        <li>
+                            <button>Защита от солнца</button>
+                            <div class="sub">
+                                <button>Защита от солнца</button>
+                                <ul>
+                                    <li><a href="#">для глаз</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button>Макияж лица</button>
+                            <div class="sub">
+                                <button>Макияж лица</button>
+                                <ul>
+                                    <li>
+                                        <button>для лица</button>
+                                        <div class="sub">
+                                            <button>для лица</button>
+                                            <ul>
+                                                <li><a href="#">Тени</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Очищение лица</a>
+                        </li>
+                        <li>
+                            <a href="#">Уход за волосами</a>
+                        </li>
+                        <li>
+                            <a href="#">Уход за кожей вокруг глаз</a>
+                        </li>
+                        <li>
+                            <a href="#">УХОД ЗА ЛИЦОМ</a>
+                        </li>
+                        <li><a href="#">Уход за телом</a></li>
+                        <li><a href="#">Наборы</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Хиты продаж</a></li>
+            <li><a href="#">Акции и скидки</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li>
+                <button>личный кабинет</button>
+                <div class="sub">
+                    <button>личный кабинет</button>
+                    <ul>
+                        <li>
+                            <a href="#">Профиле</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="mobile-bottom-bar" class="z-50 bg-white fixed left-0 bottom-0 w-full lg:hidden block">
+    <div class="container mx-auto">
+        <div class="flex justify-between py-2.5 text-[0.5rem] leading-3 text-tertiary uppercase">
+            <button class="group flex flex-col items-center active" data-id="mobile-menu-active">
+                <span class="relative flex items-center justify-center w-6">
+                    <img src="assets/images/mobile-bottom-bar/catalog.svg" alt="" class="transition-all opacity-100 group-[.active]:opacity-0 max-w-6">
+                    <img src="assets/images/mobile-bottom-bar/catalog-active.svg" alt="" class="transition-all opacity-0 group-[.active]:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-6">
+                </span>
+                <span class="block">КАТАЛОГ</span>
+            </button>
+            <a href="#" class="group flex flex-col items-center">
+                <span class="relative flex items-center justify-center w-6">
+                    <img src="assets/images/mobile-bottom-bar/main.svg" alt="" class="transition-all opacity-100 group-[.active]:opacity-0 max-w-6">
+                    <img src="assets/images/mobile-bottom-bar/main-active.svg" alt="" class="transition-all opacity-0 group-[.active]:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-6">
+                </span>
+                <span class="block">ГЛАВНАЯ</span>
+            </a>
+            <a href="#" class="group flex flex-col items-center">
+                <span class="relative flex items-center justify-center w-6">
+                    <img src="assets/images/mobile-bottom-bar/basket.svg" alt="" class="transition-all opacity-100 group-[.active]:opacity-0 max-w-6">
+                    <img src="assets/images/mobile-bottom-bar/basket-active.svg" alt="" class="transition-all opacity-0 group-[.active]:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-6">
+                </span>
+                <span class="block">КОРЗИНА</span>
+            </a>
+            <a href="#" class="group flex flex-col items-center">
+                <span class="relative flex items-center justify-center w-6">
+                    <img src="assets/images/mobile-bottom-bar/profile.svg" alt="" class="transition-all opacity-100 group-[.active]:opacity-0 max-w-6">
+                    <img src="assets/images/mobile-bottom-bar/profile-active.svg" alt="" class="transition-all opacity-0 group-[.active]:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-6">
+                </span>
+                <span class="block">ПРОФИЛЬ</span>
+            </a>
+            <a href="#" class="group flex flex-col items-center">
+                <span class="relative flex items-center justify-center w-6">
+                    <img src="assets/images/mobile-bottom-bar/favorite.svg" alt="" class="transition-all opacity-100 group-[.active]:opacity-0 max-w-6">
+                    <img src="assets/images/mobile-bottom-bar/favorite-active.svg" alt="" class="transition-all opacity-0 group-[.active]:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-6">
+                </span>
+                <span class="block">ИЗБРАННОЕ</span>
+            </a>
+        </div>
+    </div>
+</div>
+<main class="relative">
+    <div id="menu-catalog" class="w-full bg-primary sticky top-0 z-40 max-lg:hidden">
+        <div class="container mx-auto">
+            <nav>
+                <ul class="flex justify-between uppercase text-white text-2xl">
+                    <li class="group"><button class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white uppercase btn-catalog">Каталог</button></li>
+                    <li class="group"><a href="#" class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white">Хиты продаж</a></li>
+                    <li class="group active"><a href="#" class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white">Акции и скидки</a></li>
+                    <li class="group"><a href="#" class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white">Бренды</a></li>
+                    <li class="group"><a href="#" class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white">Блог</a></li>
+                    <li class="group"><a href="#" class="block pt-4 pb-3.5 transition-all border-b-2 border-b-transparent hover:border-b-white group-[.active]:border-b-white">Доставка и оплата</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="catalog hidden w-full absolute top-full left-0 bg-white opacity-0 transition-opacity duration-300 shadow-2xl">
+            <div class="container mx-auto flex justify-between relative">
+                <nav>
+                    <ul class="list">
+                        <li class="drop-list">
+                            <a href="#">Защита от солнца</a>
+                            <ul>
+                                <li><a href="#">для глаз</a></li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 1-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Макияж лица</a>
+                            <ul>
+                                <li class="drop-list">
+                                    <a href="#">для лица</a>
+                                    <ul>
+                                        <li><a href="#">Тени</a></li>
+                                    </ul>
+                                    <div class="list-product">
+                                        <div class="overflow-hidden">
+                                            <article>
+                                                <img src="assets/images/catalog-menu-product2.jpg" alt="">
+                                                <p>Бестселлер этого лето 2-2</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                            <article>
+                                                <img src="assets/images/product-card-empty.jpg" alt="">
+                                                <p>Бестселлер этого лето</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 2-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Очищение лица</a>
+                            <ul>
+                                <li><a href="#">для глаз</a></li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 1-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Уход за волосами</a>
+                            <ul>
+                                <li class="drop-list">
+                                    <a href="#">для лица</a>
+                                    <ul>
+                                        <li><a href="#">Тени</a></li>
+                                    </ul>
+                                    <div class="list-product">
+                                        <div class="overflow-hidden">
+                                            <article>
+                                                <img src="assets/images/catalog-menu-product2.jpg" alt="">
+                                                <p>Бестселлер этого лето 2-2</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                            <article>
+                                                <img src="assets/images/product-card-empty.jpg" alt="">
+                                                <p>Бестселлер этого лето</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 2-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Уход за кожей вокруг глаз</a>
+                            <ul>
+                                <li><a href="#">для глаз</a></li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 1-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">УХОД ЗА ЛИЦОМ</a>
+                            <ul>
+                                <li class="drop-list">
+                                    <a href="#">для лица</a>
+                                    <ul>
+                                        <li><a href="#">Тени</a></li>
+                                    </ul>
+                                    <div class="list-product">
+                                        <div class="overflow-hidden">
+                                            <article>
+                                                <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                                <p>Бестселлер этого лето 2-2</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                            <article>
+                                                <img src="assets/images/product-card-empty.jpg" alt="">
+                                                <p>Бестселлер этого лето</p>
+                                                <a href="#">139 000 сум</a>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="list-product">
+                                <div class="overflow-hidden">
+                                    <article>
+                                        <img src="assets/images/catalog-menu-product.jpg" alt="">
+                                        <p>Бестселлер этого лето 2-1</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                    <article>
+                                        <img src="assets/images/product-card-empty.jpg" alt="">
+                                        <p>Бестселлер этого лето</p>
+                                        <a href="#">139 000 сум</a>
+                                    </article>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Уход за телом</a></li>
+                        <li><a href="#">Наборы</a></li>
+                    </ul>
+                </nav>
+                <div class="products">
+                    <div class="main">
+                        <article>
+                            <img src="assets/images/index-discount-banner.jpg" alt="">
+                            <p>Новое поступление наборов</p>
+                            <a href="#">перейти к каталогу</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto lg:my-20 my-6 max-lg:hidden">
+        <h1 class="text-primary font-semibold lg:text-[2rem] lg:leading-[2.25rem] lg:mb-10 text-base mb-6 uppercase">Защита от солнца</h1>
+        <ul class="flex items-center lg:leading-[2rem] max-lg:text-[0.5rem] leading-[0.625rem] uppercase text-secondary">
+            <li class="lg:mr-4 mr-2 flex items-center">
+                <a href="#">главная</a>
+                <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="lg:ml-2 ml-1 lg:w-4 w-2 opacity-60">
+            </li>
+            <li class="lg:mr-4 mr-2 flex items-center">
+                <a href="#">каталог</a>
+                <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="lg:ml-2 ml-1 lg:w-4 w-2 opacity-60">
+            </li>
+            <li class="lg:mr-4 mr-2 flex items-center">
+                <a href="#">защита от солнца</a>
+                <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="lg:ml-2 ml-1 lg:w-4 w-2 opacity-60">
+            </li>
+            <li><span>Beauty of Joseon Matte Sun</span></li>
+        </ul>
+    </div>
+
+    <div class="container mx-auto my-6 lg:hidden">
+        <div class="flex items-center justify-between">
+            <a href="#" class="text-xs leading-[1.125rem] text-secondary uppercase flex items-center">
+                <img src="assets/images/icons/arrow-for-tag-select.svg" alt="" class="mr-0.5 rotate-90 w-4">назад
+            </a>
+            <button class="group">
+                <img src="assets/images/icons/favorite-pink-line.svg" alt="" class="w-6 group-[.active]:hidden">
+                <img src="assets/images/icons/favorite-pink-fill.svg" alt="" class="w-6 hidden group-[.active]:block">
+            </button>
+        </div>
+        <div class="mobile-add-to-basket w-full fixed bottom-14 left-0 z-40 bg-white/50 backdrop-blur-sm ">
+            <div class="container mx-auto">
+                <div class="flex items-center py-4 ">
+                    <div class="price">
+                        <span class="block uppercase text-tertiary font-semibold">215 000 сум</span>
+                    </div>
+                    <a href="#" class="uppercase bg-primary py-3.5 px-4 text-[0.625rem] text-white leading-3 ml-4">добавить в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto lg:mb-32">
+        <div class="lg:grid grid-cols-12 gap-8">
+            <div class="col-span-7">
+                <div>
+                    <div class="product_slider flex flex-row-reverse lg:mb-16 mb-4">
+                        <div class="product_slider_content lg:w-[calc(100%-8.25rem)] w-full">
+                            <div>
+                                <img src="assets/images/product-large-1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-5.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="product_slider_nav w-[8.25rem] pr-8 max-lg:hidden">
+                            <div>
+                                <img src="assets/images/product-large-1.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-2.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-3.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-4.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-5.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                            <div>
+                                <img src="assets/images/product-large-1.jpg" alt="" class="w-full h-[9.75rem] object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-5">
+                <h1 class="uppercase font-semibold text-tertiary lg:text-[2rem] lg:leading-9 text-base mb-2">Солнцезащитный стик Beauty of Joseon Matte Sun Stick Mugwort Camelia SPF 50+ PA++++ </h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="full"></span>
+                        <span class="half"></span>
+                        <span></span>
+                    </div>
+                    <span>57 отзыва</span>
+                </div>
+                <div class="mb-8 pb-4 lg:border-b border-b-primary-light">
+                    <div class="flex items-center lg:text-tertiary text-secondary lg:mt-8 mt-4">
+                        <span class="block lg:text-xl lg:leading-[1.375rem] text-sm leading-[1.125rem] font-semibold uppercase mr-2">Объем:</span>
+                        <span class="block lg:text-lg lg:leading-[1.625rem] text-sm leading-[1.125rem]">18гр</span>
+                    </div>
+                    <div class="flex items-center lg:text-tertiary text-secondary lg:mt-8 mt-1">
+                        <span class="block lg:text-xl lg:leading-[1.375rem] text-sm leading-[1.125rem] font-semibold uppercase mr-2">на складе:</span>
+                        <span class="block lg:text-lg lg:leading-[1.625rem] text-sm leading-[1.125rem]">Осталось 28 шт</span>
+                    </div>
+                    <div class="flex items-center lg:mt-8 mt-4">
+                        <span class="block font-semibold uppercase mr-2 max-lg:hidden">Цвет:</span>
+                        <div class="flex items-center">
+                            <label class="group lg:ml-8">
+                                <input type="checkbox" class="hidden peer" name="color">
+                                <span class="block relative after:content-[''] after:block after:absolute after:top-1/2 after:left-[-1px] after:w-[calc(100%+2px)] after:h-[1px] after:-rotate-45 group-[.disabled]:after:bg-tertiary w-6 h-6 rounded-[1px] peer-checked:border-2 peer-checked:border-tertiary hover:border-b-2 hover:border-b-tertiary" style="background-color: #C7E0BE"></span>
+                            </label>
+                            <label class="group ml-8">
+                                <input type="checkbox" class="hidden peer" name="color">
+                                <span class="block relative after:content-[''] after:block after:absolute after:top-1/2 after:left-[-1px] after:w-[calc(100%+2px)] after:h-[1px] after:-rotate-45 group-[.disabled]:after:bg-tertiary w-6 h-6 rounded-[1px] peer-checked:border-2 peer-checked:border-tertiary hover:border-b-2 hover:border-b-tertiary" style="background-color: #FDD6E9"></span>
+                            </label>
+                            <label class="group ml-8 disabled">
+                                <input type="checkbox" class="hidden peer" name="color" disabled>
+                                <span class="block relative after:content-[''] after:block after:absolute after:top-1/2 after:left-[-1px] after:w-[calc(100%+2px)] after:h-[1px] after:-rotate-45 group-[.disabled]:after:bg-tertiary w-6 h-6 rounded-[1px] peer-checked:border-2 peer-checked:border-tertiary hover:border-b-2 hover:border-b-tertiary" style="background-color: #EEC87F"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex items-center mb-36 hidden">
+                    <span class="text-tertiary font-semibold uppercase text-[2rem] leading-9 mr-4">215 000 сум</span>
+                    <span class="text-secondary line-through text-2xl leading-none mr-4">270 000 сум</span>
+                    <span class="font-semibold text-sm leading-6 text-white bg-primary-light-more py-1 px-2">-25%</span>
+                </div>
+                <div class="lg:flex items-center hidden">
+                    <div class="flex items-center mr-8">
+                        <button><img src="assets/images/icons/minus-pink.svg" alt="" class="w-6"></button>
+                        <span class="flex items-center justify-center w-10 mx-6 text-[2rem] leading-none">1</span>
+                        <button><img src="assets/images/icons/plus-pink.svg" alt="" class="w-6"></button>
+                    </div>
+                    <button class="uppercase text-white bg-primary font-semibold p-4 mr-4 w-[calc(100%-15rem)]">добавить в корзину</button>
+                    <button class="relative group w-[3.5rem] h-[3.5rem] bg-primary p-3">
+                        <img src="assets/images/icons/favorite-white-line.svg" alt="" class="transition-opacity opacity-100 w-[2rem]">
+                        <img src="assets/images/icons/favorite-white-fill.svg" alt="" class="transition-opacity absolute top-3 left-3 w-[2rem] opacity-0 group-hover:opacity-100 group-[.active]:opacity-100">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="lg:grid grid-cols-12 gap-8">
+            <div class="col-span-7">
+                <div class="tab-item group lg:mb-8 mb-5">
+                    <button class="tab-nav w-full uppercase flex items-center justify-between lg:text-2xl font-semibold transition-colors text-tertiary py-2 border-b border-primary-light group-[.active]:text-primary group-[.active]:border-b-0">
+                        <span class="mr-2">о продукте</span>
+                        <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="w-6 transition-all rotate-90 group-[.active]:-rotate-90">
+                    </button>
+                    <div class="tab-content transition-all border-b border-primary-light h-0 invisible opacity-0 group-[.active]:h-full group-[.active]:visible group-[.active]:opacity-100">
+                        <div class="lg:px-10 lg:py-8 px-4 pt-2 pb-4 text-tertiary lg:text-lg lg:leading-6 text-[0.8125rem] leading-5">
+                            <div>
+                                <p>Себорегулирующий солнцезащитный стик с экстрактом полыни и зелёного чая обеспечивает надёжную защиту кожи от ультрафиолета, а также успокаивает и препятствует появлению жирного блеска. Средство на основе химических фотостабильных фильтров нового поколения, не требует обновления в рамках города.</p>
+                            </div>
+                            <div>
+                                <p class="flex items-center lg:mt-6 mt-4"><span class="uppercase font-semibold mr-1">тип кожи:</span> Подходит для всех типов кожи</p>
+                                <p class="flex items-center lg:mt-6 mt-4"><span class="uppercase font-semibold mr-1">Объем:</span> 18гр</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-item group lg:mb-8 mb-5">
+                    <button class="tab-nav w-full uppercase flex items-center justify-between lg:text-2xl font-semibold transition-colors text-tertiary py-2 border-b border-primary-light group-[.active]:text-primary group-[.active]:border-b-0">
+                        <span class="mr-2">компоненты</span>
+                        <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="w-6 transition-all rotate-90 group-[.active]:-rotate-90">
+                    </button>
+                    <div class="tab-content transition-all border-b border-primary-light h-0 invisible opacity-0 group-[.active]:h-full group-[.active]:visible group-[.active]:opacity-100">
+                        <div class="lg:px-10 lg:py-8 px-4 pt-2 pb-4 text-tertiary lg:text-lg lg:leading-6 text-[0.8125rem] leading-5">
+                            <div class="lg:mb-6 mb-4">
+                                <h5 class="uppercase font-semibold mb-1">Экстракт зеленого чая:</h5>
+                                <p>оказывает антиоксидантное и увлажняющее действие, защищает кожу от свободных радикалов и успокаивает покраснения</p>
+                            </div>
+                            <div class="lg:mb-6 mb-4">
+                                <h5 class="uppercase font-semibold mb-1">Экстракт полыни:</h5>
+                                <p>оказывает бактерицидное, антисептическое и противовоспалительное действие. Нормализует гидролипидный баланс, помогает в лечении акне</p>
+                            </div>
+                            <div class="lg:mb-6 mb-4">
+                                <h5 class="uppercase font-semibold mb-1">Экстракт листьев дерева НИМ:</h5>
+                                <p>обладает успокаивающим и антибактериальным действием, предотвращает покраснения и высыпания</p>
+                            </div>
+                            <div class="lg:mb-6 mb-4">
+                                <h5 class="uppercase font-semibold mb-1">Экстракт алоэ:</h5>
+                                <p>оказывает смягчающее, увлажняющее и успокаивающее действие, регенерирует и снимает покраснения</p>
+                            </div>
+                            <div>
+                                <h5 class="uppercase font-semibold mb-1">Пантенол (витамин В5):</h5>
+                                <p>ускоряет заживление, успокаивает и снимает раздражение, восстанавливает целостность эпидермиса</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-item group lg:mb-8 mb-5">
+                    <button class="tab-nav w-full uppercase flex items-center justify-between lg:text-2xl font-semibold transition-colors text-tertiary py-2 border-b border-primary-light group-[.active]:text-primary group-[.active]:border-b-0">
+                        <span class="mr-2">способ применения</span>
+                        <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="w-6 transition-all rotate-90 group-[.active]:-rotate-90">
+                    </button>
+                    <div class="tab-content transition-all border-b border-primary-light h-0 invisible opacity-0 group-[.active]:h-full group-[.active]:visible group-[.active]:opacity-100">
+                        <div class="lg:px-10 lg:py-8 px-4 pt-2 pb-4 text-tertiary lg:text-lg lg:leading-6 text-[0.8125rem] leading-5">
+                            <div>
+                                <p>Нанесите средство на подготовленную кожу за 20 минут до выхода на улицу.
+                                    Рекомендуется наносить стик в 3-4 слоя.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-item group lg:mb-8 mb-5 active">
+                    <button class="tab-nav w-full uppercase flex items-center justify-between lg:text-2xl font-semibold transition-colors text-tertiary py-2 border-b border-primary-light group-[.active]:text-primary group-[.active]:border-b-0">
+                        <span class="mr-2">отзывы</span>
+                        <img src="assets/images/icons/arrow-tertiary-right-l.svg" alt="" class="w-6 transition-all rotate-90 group-[.active]:-rotate-90">
+                    </button>
+                    <div class="tab-content transition-all h-0 invisible opacity-0 group-[.active]:h-full group-[.active]:visible group-[.active]:opacity-100">
+                        <div class="pt-2 pb-4">
+                            <div class="relative lg:flex items-start max-lg:pb-14">
+                                <div>
+                                    <div class="max-lg:flex items-center justify-between max-lg:mb-4">
+                                        <h3 class="text-black lg:text-[2rem] lg:leading-9 text-2xl font-semibold lg:mb-6">4,9 из 5</h3>
+                                        <div class="product-rating lg:mb-6">
+                                            <div class="stars">
+                                                <span class="full"></span>
+                                                <span class="full"></span>
+                                                <span class="full"></span>
+                                                <span class="half"></span>
+                                                <span></span>
+                                            </div>
+                                            <span>57 отзыва</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex lg:min-w-96 max-lg:absolute bottom-0 left-0 w-full">
+                                        <button class="w-1/2 p-2 max-lg:py-3.5 bg-[#E6E2E4] text-[#DBD0D9] lg:font-semibold uppercase max-lg:text-[0.625rem] max-lg:leading-3 mr-4">все отзывы</button>
+                                        <button data-id="#feedback-modal" class="modal-open w-1/2 p-2 max-lg:py-3.5 bg-primary text-white lg:font-semibold max-lg:text-[0.625rem] max-lg:leading-3 uppercase">оставить отзыв</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center text-tertiary lg:pl-8">
+                                        <span class="flex items-center mr-1">
+                                            <img src="assets/images/icons/star-l-full.svg" alt="" class="w-8 mr-1">5
+                                        </span>
+                                        <div class="h-1 bg-[#E6E2E4] rounded lg:w-96 w-[calc(100%-5.5rem)] overflow-hidden">
+                                            <span class="h-1 bg-[#DBD0D9] rounded block" style="width: 62%;"></span>
+                                        </div>
+                                        <span class="ml-4">67</span>
+                                    </div>
+                                    <div class="flex items-center text-tertiary lg:pl-8">
+                                        <span class="flex items-center mr-1">
+                                            <img src="assets/images/icons/star-l-full.svg" alt="" class="w-8 mr-1">4
+                                        </span>
+                                        <div class="h-1 bg-[#E6E2E4] rounded lg:w-96 w-[calc(100%-5.5rem)] overflow-hidden">
+                                            <span class="h-1 bg-[#DBD0D9] rounded block" style="width: 15%;"></span>
+                                        </div>
+                                        <span class="ml-4">7</span>
+                                    </div>
+                                    <div class="flex items-center text-tertiary lg:pl-8">
+                                        <span class="flex items-center mr-1">
+                                            <img src="assets/images/icons/star-l-full.svg" alt="" class="w-8 mr-1">3
+                                        </span>
+                                        <div class="h-1 bg-[#E6E2E4] rounded lg:w-96 w-[calc(100%-5.5rem)] overflow-hidden">
+                                            <span class="h-1 bg-[#DBD0D9] rounded block" style="width: 19%;"></span>
+                                        </div>
+                                        <span class="ml-4">9</span>
+                                    </div>
+                                    <div class="flex items-center text-tertiary lg:pl-8">
+                                        <span class="flex items-center mr-1">
+                                            <img src="assets/images/icons/star-l-full.svg" alt="" class="w-8 mr-1">2
+                                        </span>
+                                        <div class="h-1 bg-[#E6E2E4] rounded lg:w-96 w-[calc(100%-5.5rem)] overflow-hidden">
+                                            <span class="h-1 bg-[#DBD0D9] rounded block" style="width: 6%;"></span>
+                                        </div>
+                                        <span class="ml-4">5</span>
+                                    </div>
+                                    <div class="flex items-center text-tertiary lg:pl-8">
+                                        <span class="flex items-center mr-1">
+                                            <img src="assets/images/icons/star-l-full.svg" alt="" class="w-8 mr-1">1
+                                        </span>
+                                        <div class="h-1 bg-[#E6E2E4] rounded lg:w-96 w-[calc(100%-5.5rem)] overflow-hidden">
+                                            <span class="h-1 bg-[#DBD0D9] rounded block" style="width: 12%;"></span>
+                                        </div>
+                                        <span class="ml-4">8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:mt-10 mt-4">
+                                <div class="lg:pt-10 lg:pb-4 py-2 px-2 border-b border-b-primary-light">
+                                    <div class="flex items-start">
+                                        <div class="text-secondary lg:w-44 lg:mr-8 w-20 mr-3">
+                                            <div class="product-rating mobile-tertiary">
+                                                <div class="stars">
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="half"></span>
+                                                    <span></span>
+                                                </div>
+                                                <span class="lg:hidden">5.0</span>
+                                            </div>
+                                            <p class="max-lg:text-[0.5rem] block">Ника Н.</p>
+                                            <span class="lg:text-xs text-[0.5rem] block">20.10.2024</span>
+                                        </div>
+                                        <div class="max-lg:w-[calc(100%-6rem)]">
+                                            <p class="text-tertiary max-lg:text-[0.5rem]">Солнцезащитная малышка, которую удобно взять с собой! Использую для того, чтобы татуировки не выгорели на солнышке.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start lg:mt-8 mt-2">
+                                        <div class="text-secondary lg:w-44 lg:mr-8 w-20 mr-3">
+                                            <p class="max-lg:text-[0.5rem] block">Администратор</p>
+                                            <span class="lg:text-xs text-[0.5rem] block">20.10.2024</span>
+                                        </div>
+                                        <div class="max-lg:w-[calc(100%-6rem)]">
+                                            <p class="text-secondary max-lg:text-[0.5rem]">Благодарим за отзыв</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:pt-10 lg:pb-4 py-2 px-2 border-b border-b-primary-light">
+                                    <div class="flex items-start">
+                                        <div class="text-secondary lg:w-44 lg:mr-8 w-20 mr-3">
+                                            <div class="product-rating mobile-tertiary">
+                                                <div class="stars">
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="half"></span>
+                                                    <span></span>
+                                                </div>
+                                                <span class="lg:hidden">5.0</span>
+                                            </div>
+                                            <p class="max-lg:text-[0.5rem] block">Умида Косымова</p>
+                                            <span class="lg:text-xs text-[0.5rem] block">19.10.2024</span>
+                                        </div>
+                                        <div class="max-lg:w-[calc(100%-6rem)]">
+                                            <p class="text-tertiary max-lg:text-[0.5rem]">Мне понравилось. Наносится приятно</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:pt-10 lg:pb-4 py-2 px-2 border-b border-b-primary-light">
+                                    <div class="flex items-start">
+                                        <div class="text-secondary lg:w-44 lg:mr-8 w-20 mr-3">
+                                            <div class="product-rating mobile-tertiary">
+                                                <div class="stars">
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="full"></span>
+                                                    <span class="half"></span>
+                                                    <span></span>
+                                                </div>
+                                                <span class="lg:hidden">5.0</span>
+                                            </div>
+                                            <p class="max-lg:text-[0.5rem] block">Настя Ли</p>
+                                            <span class="lg:text-xs text-[0.5rem] block">17.10.2024</span>
+                                        </div>
+                                        <div class="max-lg:w-[calc(100%-6rem)]">
+                                            <p class="text-tertiary max-lg:text-[0.5rem]">Отличный дизайн. Показался жирным</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="uppercase text-secondary flex items-center lg:my-4 my-2 max-lg:text-[0.5rem]">загрузить еще <img src="assets/images/icons/arrow-for-tag-select.svg" alt="" class="-rotate-90 lg:w-4 lg:ml-2 w-2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto lg:pb-36 pb-20">
+        <div class="max-lg:flex items-center justify-between lg:mb-10 mb-6">
+            <h2 class="text-secondary lg:text-2xl font-semibold uppercase">недавно просмотренные</h2>
+            <div class="footer-products-slider-navs lg:hidden flex items-center justify-between">
+                <button class="prev max-lg:mr-14"><img src="assets/images/icons/arrow-for-tag-select.svg" alt="" class="lg:w-6 w-3.5 rotate-90"></button>
+                <button class="next"><img src="assets/images/icons/arrow-for-tag-select.svg" alt="" class="lg:w-6 w-3.5 -rotate-90"></button>
+            </div>
+        </div>
+        <div class="footer-products-slider">
+            <div class="item">
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+            </div>
+            <div class="item">
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+            </div>
+            <div class="item">
+                <article class="product-card-default">
+                    <div class="img">
+                        <div class="fixed-top">
+                            <div class="sticks">
+                                <span class="discount">SALE -20%</span>
+                            </div>
+                            <button class="btn-favorite">&nbsp;</button>
+                        </div>
+                        <a href="#">
+                            <img src="assets/images/product-card-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="price">
+                            <p>139 000 сум <span>189 000 сум</span></p>
+                        </div>
+                        <div class="title">
+                            <a href="#">OSEA Seaglow Overnight, 34ml</a>
+                        </div>
+                        <div class="description">
+                            <p>Сыворотка для отшелушивания кожи, ускоряет обновление, выравнивая ее тон</p>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>еще нет отзывов</span>
+                            <div class="mobile">
+                                <span class="full"></span> 5.0
+                            </div>
+                        </div>
+                        <div class="count">
+                            <span>Осталось 37 шт</span>
+                        </div>
+                    </div>
+                    <button class="btn default">
+                        <span>в корзину</span>
+                    </button>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="bg-primary-light-more lg:pt-20 lg:pb-24 pt-10 pb-40 overflow-hidden">
+    <div class="container mx-auto">
+        <div class="lg:grid grid-cols-12 gap-8">
+            <div class="col-span-7 lg:order-2 col-start-6 lg:flex justify-between">
+                <div class="max-lg:mb-10">
+                    <h3 class="text-primary uppercase lg:text-[2rem] lg:leading-9 font-semibold lg:mb-8 mb-4">Информация</h3>
+                    <ul>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">Блог</a></li>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">Доставка и оплата</a></li>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">Частые вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="max-lg:mb-10">
+                    <h3 class="text-primary uppercase lg:text-[2rem] lg:leading-9 font-semibold lg:mb-8 mb-4">о нас</h3>
+                    <ul>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">О компании</a></li>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">ВАКАНСИЯ</a></li>
+                    </ul>
+                </div>
+                <div class="max-lg:mb-10">
+                    <h3 class="text-primary uppercase lg:text-[2rem] lg:leading-9 font-semibold lg:mb-8 mb-4">КОНТАКТЫ</h3>
+                    <ul>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">+998 95 062 22 88</a></li>
+                        <li class="uppercase lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3"><a href="#" class="table transition-all text-primary hover:text-white">kshopuz@mail.ru</a></li>
+                        <li class="uppercase text-primary lg:font-semibold mb-4 max-lg:text-[0.625rem] max-lg:leading-3">звонить с 10:00 до 20:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-4 lg:order-1">
+                <h3 class="text-primary uppercase lg:text-[2rem] lg:leading-9 font-semibold lg:mb-8 mb-4">будьте в курсе акций и новостей</h3>
+                <div>
+                    <div class="flex mb-4">
+                        <select class="bg-white block pl-4 lg:py-5 py-2.5 text-tertiary lg:leading-8 max-lg:text-[0.8125rem] leading-5">
+                            <option value="1">+998 90</option>
+                            <option value="2">+998 99</option>
+                        </select>
+                        <input type="text" placeholder="Номер телефона" class="lg:w-[calc(100%-16.5rem)] w-full bg-white block px-2 lg:py-5 py-3 placeholder-secondary lg:text-lg text-xs max-lg:leading-[0.875rem]">
+                        <button class="bg-primary text-white lg:font-semibold uppercase lg:py-6 px-4 lg:text-base text-[0.625rem] leading-3">подписаться</button>
+                    </div>
+                    <label class="flex items-center">
+                        <label class="form-group-checkbox !mb-0">
+                            <input type="checkbox">
+                            <span>&nbsp;</span>
+                        </label>
+                        <span class="table text-tertiary lg:text-lg lg:leading-6 text-[0.5rem] leading-3">Я соглашаюсь с политикой конфиденциальности и на  получение информационных и рекламных сообщений</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal" id="feedback-modal">
+    <div class="shape"></div>
+    <div class="modal-content">
+        <button class="close">
+            <img src="assets/images/icons/close-pink-L.svg" alt="">
+        </button>
+        <div class="modal-content-main">
+            <h3 class="text-primary lg:text-[2rem] font-semibold uppercase lg:mb-20 mb-10">оставить отзыв</h3>
+            <article class="flex lg:items-center lg:mb-12 mb-6">
+                <div class="lg:w-[37%] w-[22%]">
+                    <img src="assets/images/product-in-basket-page.jpg" alt="">
+                </div>
+                <div class="lg:w-63% w-[78%] lg:pl-8 pl-4">
+                    <h4 class="text-tertiary lg:text-[1.25rem] lg:leading-[1.375rem] lg:font-semibold text-xs leading-[1.125rem] lg:mb-4 mb-2">Солнцезащитный стик Beauty of Joseon Matte Sun Stick Mugwort Camelia SPF 50+ PA++++ </h4>
+                    <p class="flex items-center mt-2 max-lg:text-xs max-lg:leading-[1.125rem]">
+                        <span class="block mr-2 font-medium">Объем:</span>
+                        <span>18гр</span>
+                    </p>
+                    <p class="flex items-center mt-2 max-lg:text-xs max-lg:leading-[1.125rem]">
+                        <span class="block mr-2 font-medium">Цвет:</span>
+                        <span class="block lg:w-6 w-4 lg:h-6 h-4 rounded-[1px]" style="background-color: #C7E0BE"></span>
+                    </p>
+                    <p class="lg:hidden mt-4 text-[0.8125rem] leading-[1.125rem] font-semibold uppercase">215 000 сум</p>
+                </div>
+            </article>
+            <div class="mb-6">
+                <span class="uppercase text-tertiary lg:leading-8 max-lg:text-xs leading-[1.125rem] mb-2">оценка</span>
+                <div class="feedback-stars">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <div class="lg:mb-6">
+                <label class="max-lg:block max-lg:leading-[0]">
+                    <span class="block uppercase text-tertiary lg:leading-8 max-lg:text-xs leading-[1.125rem] mb-2">комментарий</span>
+                    <textarea name="" id="" rows="3" class="w-full p-2 lg:border lg:border-secondary border-t border-r border-l border-primary text-secondary leading-8"></textarea>
+                </label>
+            </div>
+            <div class="w-full flex items-center justify-between lg:border-0 max-lg:px-4 max-lg:py-4 max-lg:mb-4 border-b border-r border-l border-primary">
+                <label class="input-file flex w-[16rem]">
+                    <img src="assets/images/icons/attach-pink.svg" alt="" class="w-4 mr-2">
+                    <span class="default max-lg:hidden">5 файлов JPG, JPEG, PNG, BMP, GIF. до 30 Мб каждый</span>
+                    <span class="names hidden"></span>
+                    <input type="file" multiple class="hidden">
+                </label>
+                <button class="uppercase text-white bg-primary lg:py-4 py-3.5 px-6 lg:font-semibold max-lg:text-[0.5rem] max-lg:leading-3">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

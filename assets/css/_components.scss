@@ -1,0 +1,707 @@
+
+
+header{
+
+}
+
+#menu-catalog{
+  .catalog{
+    nav{
+      position: relative;
+      width: 25%;
+      ul{
+        padding: 1.5rem 2rem;
+        a{
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding-right: 2.5rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+      .list{
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        .drop-list{
+          >a{
+            position: relative;
+            display: block;
+            color: $tertiary;
+            transition: all .3s;
+            &:after{
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 1.5rem;
+              height: 1.5rem;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              background-image: url("../images/icons/arrow-tertiary-right-l.svg");
+              transition: all .3s;
+            }
+            &:hover{
+              color: $primary;
+              &::after{
+                background-image: url("../images/icons/arrow-pink-right-l.svg");
+              }
+            }
+          }
+          ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-left: 1px solid transparent;
+            transition: opacity .3s, left .3s, border-left-color 1s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            overflow-x: hidden;
+          }
+          &.active{
+            >a{
+              color: $primary;
+              &::after{
+                background-image: url("../images/icons/arrow-pink-right-l.svg");
+              }
+            }
+            >ul{
+              width: 100%;
+              left: 100%;
+              visibility: visible;
+              opacity: 1;
+              overflow-x: visible;
+              border-left-color: $primary-light;
+            }
+          }
+          .list-product{
+            display: none;
+          }
+        }
+      }
+    }
+    .products{
+      width: 25%;
+      .main{
+        position: relative;
+        width: 170%;
+        right: 70%;
+      }
+      article{
+        padding-bottom: 1rem;
+        margin-bottom: 1.75rem;
+        img{
+          max-width: 100%;
+        }
+        p{
+          font-size: 2rem;
+          line-height: 1;
+          margin: 1rem 0;
+          font-weight: 400;
+          font-family: "Poiret One", sans-serif;
+        }
+        a{
+          display: table;
+          background: $primary;
+          color: white;
+          padding: 0.5rem 1rem;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+#mobile-menu{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background: #fff;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: left 0.3s ease-in-out;
+  .close{
+    z-index: 99;
+    position: relative;
+    display: table;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  nav{
+    >ul{
+      padding: 0 3.25rem 0 1.25rem!important;
+      >li{
+        >a,>button{
+        }
+      }
+    }
+    .sub{
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100vw;
+      height: 100vh;
+      visibility: hidden;
+      opacity: 0;
+      background-color: #fff;
+      padding: 6rem 3.25rem 2rem;
+      transition: all 0.3s;
+      &.active{
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+      }
+      >button{
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        background: url("../images/icons/arrow-pink-left-l.svg") no-repeat left center;
+        background-size: 1rem;
+        position: relative;
+        left: -1.5rem;
+        color: $primary;
+      }
+      >ul{
+        >li{
+          >a, >button{}
+        }
+      }
+    }
+    ul{
+      li{
+        a, button{
+          text-transform: uppercase;
+          display: block;
+          width: 100%;
+          text-align: left;
+          color: $tertiary;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          padding: 0.75rem 0;
+        }
+        >button{
+          background: url("../images/icons/arrow-tertiary-right-l.svg") no-repeat right center;
+          background-size: 1rem;
+        }
+        &.active{
+          >a, >button {
+            color: $primary;
+          }
+          >button{
+            background: url("../images/icons/arrow-pink-right-l.svg") no-repeat right center;
+            background-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-card-default{
+  display: block;
+  max-width: 22.75rem;
+  width: 100%;
+  .img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    .fixed-top{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      .sticks{
+        .discount{
+          display: inline-block;
+          background: $primary;
+          color: #ffffff;
+          font-weight: 600;
+          line-height: 1.5rem;
+          padding: 0.25rem 0.5rem;
+        }
+        .text{
+          display: inline-block;
+          background: #ffffff;
+          color: $primary;
+          font-weight: 400;
+          font-size: .875rem;
+          line-height: 1.5rem;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+      .btn-favorite{
+        position: relative;
+        width: 1.75rem;
+        height: 1.75rem;
+        &:before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url("../images/icons/favorite-white-line.svg");
+          opacity: 1;
+          transition: all .1s;
+        }
+        &.active:before{
+          background-image: url("../images/icons/favorite-pink-fill.svg");
+        }
+        &:hover::before{
+          opacity: 0.7;
+          background-image: url("../images/icons/favorite-pink-fill.svg");
+        }
+      }
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+  .info{
+    max-width: 100%;
+    height: 11.5rem;
+    &.h-auto{
+      height: auto;
+    }
+    .price{
+      margin-bottom: 1rem;
+      p{
+        display: flex;
+        align-items: center;
+        font-size: 1.375rem;
+        line-height: 1.5rem;
+        color: $primary;
+        font-weight: 700;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        span{
+          margin-left: .5rem;
+          font-size: 0.875rem;
+          line-height: 1rem;
+          color: $secondary;
+          font-weight: 400;
+          text-decoration: line-through;
+        }
+      }
+    }
+    .title{
+      color: $tertiary;
+      font-weight: 600;
+      margin-bottom: .25rem;
+      a{
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    .description{
+      p{
+        max-height: 3rem;
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        color: $secondary;
+        font-weight: 400;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @supports (-webkit-line-clamp: 2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: initial;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+    .rating{
+      margin-top: 1rem;
+      margin-bottom: .25rem;
+      display: flex;
+      align-items: center;
+      .stars{
+        display: flex;
+        align-items: center;
+        span{
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../images/icons/star-s-empty.svg");
+          &.full{
+            background-image: url("../images/icons/star-s-full.svg");
+          }
+          &.half{
+            background-image: url("../images/icons/star-s-half.svg");
+          }
+        }
+      }
+      >span{
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        color: $secondary;
+        font-weight: 400;
+        margin-left: .5rem;
+      }
+      .mobile{
+        display: none;
+      }
+    }
+   .count{
+     span{
+       line-height: 1.5rem;
+       font-size: 0.875rem;
+       color: $secondary;
+       font-weight: 400;
+     }
+   }
+  }
+  .btn{
+    text-align: center;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    span{}
+    &.default{
+      background: $primary;
+      color: #ffffff;
+    }
+    &.added{
+      background: $primary-light;
+      color: #ffffff;
+      span{
+        padding-left: 1.25rem;
+        background: url("../images/icons/checked-white.svg") no-repeat left center;
+        background-size: 0.8rem;
+      }
+    }
+    &.disabled{
+      background: $silver;
+      color: #DBD0D9;
+    }
+    &.notify{
+      background: transparent;
+      color: $primary;
+      border: 1px solid $primary-light-more;
+      padding: calc(.5rem - 1px) calc(1rem - 1px);
+    }
+  }
+}
+
+.product-card-min{
+  .img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    .fixed-top{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      .sticks{
+        .discount{
+          display: inline-block;
+          background: $primary;
+          color: #ffffff;
+          font-weight: 600;
+          line-height: 1.5rem;
+          padding: 0.25rem 0.5rem;
+        }
+        .text{
+          display: inline-block;
+          background: #ffffff;
+          color: $primary;
+          font-weight: 400;
+          font-size: .875rem;
+          line-height: 1.5rem;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+      .btn-favorite{
+        position: relative;
+        width: 1.75rem;
+        height: 1.75rem;
+        &:before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-image: url("../images/icons/favorite-white-line.svg");
+          opacity: 1;
+          transition: all .1s;
+        }
+        &.active:before{
+          background-image: url("../images/icons/favorite-pink-fill.svg");
+        }
+        &:hover::before{
+          opacity: 0.7;
+          background-image: url("../images/icons/favorite-pink-fill.svg");
+        }
+      }
+    }
+    img{
+      max-width: 100%;
+      //min-width: 14.5rem;
+      height: 14rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .info{
+    max-width: 100%;
+    max-height: 14rem;
+    overflow: hidden;
+    .height-fixed{
+      height: 11rem;
+    }
+    .title{
+      color: $tertiary;
+      font-weight: 600;
+      margin-bottom: .25rem;
+      a{
+        display: block;
+        width: 100%;
+        max-height: 4.5rem;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @supports (-webkit-line-clamp: 2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: initial;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+    .description{
+      p{
+        max-height: 4.5rem;
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        color: $secondary;
+        font-weight: 400;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        @supports (-webkit-line-clamp: 3) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: initial;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+    .rating{
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      .stars{
+        display: flex;
+        align-items: center;
+        span{
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../images/icons/star-s-empty.svg");
+          &.full{
+            background-image: url("../images/icons/star-s-full.svg");
+          }
+          &.half{
+            background-image: url("../images/icons/star-s-half.svg");
+          }
+        }
+      }
+      .desktop{
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        color: $secondary;
+        font-weight: 400;
+        margin-left: .5rem;
+      }
+      .mobile{
+        display: none;
+      }
+    }
+    .count{
+      line-height: 0;
+      span{
+        display: block;
+        line-height: 1.5rem;
+        font-size: 0.875rem;
+        color: $secondary;
+        font-weight: 400;
+      }
+    }
+    .flex{
+      margin-top: 0.5rem;
+      .btn{
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: .5rem 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        s{
+          display: inline-block;
+          margin-left: 0.25rem;
+          font-size: 0.875em;
+          font-weight: 400;
+          text-decoration: line-through;
+          text-transform: lowercase;
+        }
+        &.default{
+          background: $primary;
+          color: #ffffff;
+        }
+        &.added{
+          background: $primary-light;
+          color: #ffffff;
+          span{
+            padding-left: 1.25rem;
+            background: url("../images/icons/checked-white.svg") no-repeat left center;
+            background-size: 0.8rem;
+          }
+        }
+        &.disabled{
+          background: $silver;
+          color: #DBD0D9;
+        }
+        &.notify{
+          font-size: 0.75rem;
+          background: transparent;
+          color: $primary;
+          border: 1px solid $primary-light-more;
+          padding: calc(.5rem - 1px) calc(1rem - 1px);
+        }
+      }
+      .price{
+        display: none;
+      }
+    }
+  }
+  &.horizontal{
+    display: flex;
+    align-items: flex-start;
+    .img{
+      min-width: 12.5rem;
+      margin-bottom: 0;
+      margin-right: 2rem;
+      width: calc( 50% - 1rem );
+    }
+    .info{
+      width: calc( 50% - 1rem );
+    }
+  }
+}
+
+.modal{
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: opacity .1s;
+  &.active{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    visibility: visible;
+    opacity: 100;
+    .shape, .modal-content{
+      opacity: 1;
+    }
+  }
+  .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all .2s;
+  }
+  .modal-content{
+    overflow: auto;
+    max-height: 100%;
+    position: relative;
+    width: 42rem;
+    padding: 2rem;
+    background: #fff;
+    opacity: 0;
+    transition: all .3s;
+    .close{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      img{
+        width: 2.5rem;
+      }
+    }
+    .modal-content-main{
+    }
+  }
+}
+

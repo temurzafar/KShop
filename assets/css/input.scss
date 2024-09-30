@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+$primary: #FF63B0;
+$primary-light: #FFB7DA;
+$primary-light-more: #FDD6E9;
+$secondary: #9F8189;
+$tertiary: #483A45;
+$silver: #E6E2E4;
+
+
+@import "slick-carousel/slick/slick.css";
+@import 'components';
+@import 'helpers';
+@import 'responsive';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
