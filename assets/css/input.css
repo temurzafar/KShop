@@ -11,6 +11,7 @@
   padding: 1.5rem 2rem;
 }
 #menu-catalog .catalog nav ul a {
+  display: table;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.5rem;
@@ -672,20 +673,20 @@ input:active, textarea:active, select:active {
   outline: 0 !important;
 }
 
-.intro .slick-dots, .product_slider .product_slider_content .slick-dots {
+.intro .slick-dots {
   position: absolute;
   bottom: 4.75rem;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
-.intro .slick-dots li, .product_slider .product_slider_content .slick-dots li {
+.intro .slick-dots li {
   display: inline-block;
   width: 1rem;
   height: 1rem;
   margin: 0 1rem;
 }
-.intro .slick-dots li button, .product_slider .product_slider_content .slick-dots li button {
+.intro .slick-dots li button {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -694,7 +695,7 @@ input:active, textarea:active, select:active {
   background-color: #fff;
   text-indent: -999px;
 }
-.intro .slick-dots li.slick-active button, .product_slider .product_slider_content .slick-dots li.slick-active button {
+.intro .slick-dots li.slick-active button {
   background-color: #FF63B0;
 }
 
@@ -829,6 +830,7 @@ input:active, textarea:active, select:active {
 .form-group-input input, .form-group-input select {
   width: 100%;
   border: 1px solid #9F8189;
+  border-radius: 0;
   padding: 0.5rem;
   font-size: 1rem;
   line-height: 2rem;
@@ -876,31 +878,6 @@ input:active, textarea:active, select:active {
 .feedback-stars:not(.disabled) button:hover,
 .feedback-stars:not(.disabled) button:has(~ button:hover) {
   background-image: url("../images/icons/star-feedback-full.svg");
-}
-
-.product_slider .product_slider_nav .slick-slide {
-  position: relative;
-  padding-bottom: 1rem;
-  border: 0;
-  line-height: 0;
-  opacity: 0.5;
-  transition: all 0.2s;
-}
-.product_slider .product_slider_nav .slick-slide:after {
-  content: "";
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: #FF63B0;
-  transition: all 0.2s;
-}
-.product_slider .product_slider_nav .slick-slide.slick-current {
-  opacity: 1;
-}
-.product_slider .product_slider_nav .slick-slide.slick-current:after {
-  height: 4px;
 }
 
 .product-rating {
@@ -999,7 +976,20 @@ body.mobile-menu-active #mobile-menu {
   visibility: visible;
   opacity: 1;
 }
+body select {
+  border-radius: 0;
+}
 
+@media screen and (min-width: 1024px) {
+  .product-image-scroll {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .product-image-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
 html {
   font-size: 100%;
 }
@@ -1009,7 +999,7 @@ html {
     font-size: 75%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   html {
     font-size: 100%;
   }
@@ -1039,23 +1029,23 @@ html {
     z-index: 99;
     width: 100%;
   }
-  .intro .slick-slide, .product_slider .product_slider_content .slick-slide {
+  .intro .slick-slide {
     line-height: 0;
   }
-  .intro .slick-dots, .product_slider .product_slider_content .slick-dots {
+  .intro .slick-dots {
     bottom: 0.625rem;
     left: 50%;
     transform: translateX(-50%);
   }
-  .intro .slick-dots li, .product_slider .product_slider_content .slick-dots li {
+  .intro .slick-dots li {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0 0.375rem;
   }
-  .intro .slick-dots li button, .product_slider .product_slider_content .slick-dots li button {
+  .intro .slick-dots li button {
     background-color: transparent;
   }
-  .intro .slick-dots li button:after, .product_slider .product_slider_content .slick-dots li button:after {
+  .intro .slick-dots li button:after {
     overflow: hidden;
     content: "";
     position: absolute;
@@ -1067,10 +1057,10 @@ html {
     border-radius: 50%;
     background-color: #fff;
   }
-  .intro .slick-dots li.slick-active button, .product_slider .product_slider_content .slick-dots li.slick-active button {
+  .intro .slick-dots li.slick-active button {
     background-color: transparent;
   }
-  .intro .slick-dots li.slick-active button:after, .product_slider .product_slider_content .slick-dots li.slick-active button:after {
+  .intro .slick-dots li.slick-active button:after {
     background-color: #FF63B0;
   }
   .products-slider {
@@ -1485,6 +1475,15 @@ html {
   }
   .modal .modal-content .close img {
     width: 2rem;
+  }
+  .product-image-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  .product-image-scroll img {
+    max-width: 100%;
   }
 }
 body {
